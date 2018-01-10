@@ -56,7 +56,7 @@ end
 #add capybara for easy test edition.along with its dependent gem selenium.
 group :test do 
   gem 'selenium-webdriver', '2.0.0'
-  gem 'capybara', '2.1.0'    
+  gem 'capybara', '2.2.0'    
 end
 
 group :production do

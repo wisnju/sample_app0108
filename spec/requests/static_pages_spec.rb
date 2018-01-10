@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "Static Pages" do
   describe "Home Page" do
-    it "should have the content 'Sample App'" do
+    it "should have the content 'Sample app'" do
       visit '/static_pages/home'
       expect(page).to have_content('Sample app')
     end
