@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
+#load rubyzip 
+gem 'rubyzip', '~>0.9.9'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -22,10 +25,10 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks','1.1.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 1.0.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -47,13 +50,13 @@ end
 #add rspec to dev and test
 group :development, :test do
   gem 'sqlite3','1.3.7'
-  gem 'rspec-rails','2.13.1'
+  gem 'rspec-rails','~>3.0.0'
 end
 
 #add capybara for easy test edition.along with its dependent gem selenium.
 group :test do 
   gem 'selenium-webdriver', '2.0.0'
-  gem 'capybara', '2.0.0'    
+  gem 'capybara', '2.1.0'    
 end
 
 group :production do
